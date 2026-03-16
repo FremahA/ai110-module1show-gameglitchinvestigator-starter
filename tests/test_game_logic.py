@@ -59,3 +59,41 @@ def test_hard_range():
     low, high = get_range_for_difficulty("Hard")
     assert low == 1
     assert high == 200
+
+
+# Edge case tests: Ensure the game handles negative numbers, high-precision decimals, and extremely large values gracefully.
+
+def test_parse_negative_number():
+    from logic_utils import parse_guess
+    ok, guess, err = parse_guess("-5")
+    assert ok is True
+    assert guess == -5
+    assert err is None
+
+def test_parse_high_precision_decimal():
+    from logic_utils import parse_guess
+    ok, guess, err = parse_guess("3.999999999999999999")
+    assert ok is True
+    assert guess == 4
+    assert err is None
+
+def test_parse_extremely_large_number():
+    from logic_utils import parse_guess
+    large_num_str = str(10**1000)  # 1 followed by 1000 zeros
+    ok, guess, err = parse_guess(large_num_str)
+    assert ok is True
+    assert guess == 10**1000
+    assert err is None
+
+def test_check_guess_with_negative():
+    outcome, message = check_guess(-5, 50)
+    assert outcome == "Too Low"
+    assert "HIGHER" in message.upper()
+
+def test_check_guess_with_large_number():
+    outcome, message = check_guess(10**1000, 50)
+    assert outcome == "Too High"
+    assert "LOWER" in message.upper()
+
+
+
