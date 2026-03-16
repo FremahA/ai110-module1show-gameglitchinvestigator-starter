@@ -58,4 +58,4 @@ def test_normal_range():
 def test_hard_range():
     low, high = get_range_for_difficulty("Hard")
     assert low == 1
-    assert high == 50
+    assert high == 200
