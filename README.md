@@ -59,4 +59,4 @@ Scoring logic - Tracked scores based on how few attempts it takes to win in rela
 
 ## 🚀 Stretch Features
 
-- [ ] [Screenshot of advanced tests](images/Advanced_Edge_Case_Testing.png)
+- [ ] ![Screenshot of advanced tests](images/Advanced_Edge_Case_Testing.png)
