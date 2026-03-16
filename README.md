@@ -55,8 +55,8 @@ Scoring logic - Tracked scores based on how few attempts it takes to win in rela
 
 ## 📸 Demo
 
-- [ ] ![Screenshot of winning game](images/Advanced Edge-Case Testing.png)
+- [ ] ![Screenshot of winning game](images/winning_game.png)
 
 ## 🚀 Stretch Features
 
-- [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
+- [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here](images/Advanced Edge-Case Testing.png)
