@@ -73,4 +73,4 @@ One thing I would do differently next time is ask AI more specific questions ear
 
 - In one or two sentences, describe how this project changed the way you think about AI generated code.  
 
-This project changed how I think about AI-generated code because I realized AI suggestions should be treated as hypotheses rather final answers. All AI generated code must be carefully tested and verified to make sure it fixes the problem correctly.   
+This project changed how I think about AI-generated code because I realized AI suggestions should be treated as hypotheses rather final answers. All AI generated code must be carefully tested and verified to make sure it fixes the problem correctly.  
