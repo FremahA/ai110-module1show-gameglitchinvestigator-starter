@@ -11,13 +11,15 @@ The game has a selected difficulty level, you guess a number between 1 and 100 a
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
-the secret number kept changing
-the hints were backwards
+The secret number kept changing
+The hints were backwards
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+Claude
+
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
@@ -36,6 +38,9 @@ the hints were backwards
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+I learned that Streamlit reruns the script from top to bottom whenever the user interacts with the app. Because of that, values that are supposed to stay the same across interactions need to be stored in session state. Otherwise, things like the secret number can get reset every time the app reruns.
+
+If I were explaining it to a friend, I would say Streamlit is like restarting the script every time you click something, and session state is the place where you keep the important values so they do not get lost between reruns.
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -43,4 +48,7 @@ the hints were backwards
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+One thing I would do differently next time is ask AI more specific questions earlier, especially about what I expected to happen, what actually happened, and what part of the code seemed related. That would probably make the suggestions more accurate and save time.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
