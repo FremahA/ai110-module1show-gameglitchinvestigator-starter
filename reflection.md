@@ -15,6 +15,7 @@ The game has a selected difficulty level, you guess a number between 1 and 100 a
   The hints were backwards. It said to lower at times i was supposed to guess higher and it said to higher at time i was supposed to guess lower.  
   Another bug is that when you select the difficulty. It sates the expected range of numbers you can guess from but when you check the developer info, the secret number is is sometimes outside that range.  
   The range for "Hard" diffulty level was lower than that of the "Normal level.  
+  Scoring logic was confusing and did not factor in the number of attempts based on the difficulty level.  
 ---
 
 ## 2. How did you use AI as a teammate?
