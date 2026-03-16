@@ -22,6 +22,10 @@ attempt_limit_map = {
 }
 attempt_limit = attempt_limit_map[difficulty]
 
+# FIX: Previously the secret was always randint(1, 100) and the prompt showed
+# "1 to 100" regardless of difficulty. Collaborated with Claude Code to call
+# get_range_for_difficulty() here so both the displayed range and the secret
+# generation respect the selected difficulty.
 low, high = get_range_for_difficulty(difficulty)
 
 st.sidebar.caption(f"Range: {low} to {high}")

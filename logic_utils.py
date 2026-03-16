@@ -1,3 +1,6 @@
+# FIX: Difficulty ranges were hardcoded to 1-100 everywhere in the app.
+# Collaborated with Claude Code to extract them into this lookup function so
+# both the secret generation and the guess prompt use the correct range.
 def get_range_for_difficulty(difficulty: str):
     """Return (low, high) inclusive range for a given difficulty."""
     if difficulty == "Easy":
@@ -32,6 +35,11 @@ def parse_guess(raw: str):
     return True, value, None
 
 
+# FIX: Two bugs lived here. (1) Hint messages were reversed — "Too High" said
+# "Go HIGHER!" and "Too Low" said "Go LOWER!". (2) The secret was sometimes
+# stored as a string, causing string-vs-int comparisons to silently give wrong
+# results. Collaborated with Claude Code to correct the hint direction and
+# ensure integer comparison is always used via int() conversion.
 def check_guess(guess, secret):
     """
     Compare guess to secret and return (outcome, message).
