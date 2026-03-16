@@ -11,14 +11,14 @@ The game has a selected difficulty level, you guess a number between 1 and 100 a
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
-  The secret number kept changing everytime i made a new guess/attempt in the same game.
-  The hints were backwards. It said to lower at times i was supposed to guess higher and it said to higher at time i was supposed to guess lower.
-  Another bug is that when you select the difficulty. It sates the expected range of numbers you can guess from but when you check the developer info, the secret number is is sometimes outside that range.'
+  The secret number kept changing everytime i made a new guess/attempt in the same game.  
+  The hints were backwards. It said to lower at times i was supposed to guess higher and it said to higher at time i was supposed to guess lower.  
+  Another bug is that when you select the difficulty. It sates the expected range of numbers you can guess from but when you check the developer info, the secret number is is sometimes outside that range.  
 ---
 
 ## 2. How did you use AI as a teammate?
 
-- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?  
 I used Claude, Chat GPT and Copilot.
 
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
